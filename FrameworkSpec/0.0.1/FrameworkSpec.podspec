@@ -14,7 +14,12 @@ Pod::Spec.new do |s|
   #s.source_files  = 'prashant/include/CCCSDK/*.h'
   #s.library = 'libCCCSDK.a' 
   #s.source_files = '*.h' 
-  s.vendored_libraries = 'libCCCSDK.a'
+  #s.vendored_libraries = 'libCCCSDK.a'
   #s.ios.library = 'libCCCSDK'
   #s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/FrameworkSpec"' } 
+  
+  s.source_files = '*.h'
+  s.preserve_paths = 'libCCCSDK.a'
+  s.library = 'libCCCSDK'
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/libCCCSDK' }
 end
