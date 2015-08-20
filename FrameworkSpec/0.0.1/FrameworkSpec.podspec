@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
   #s.library = 'libCCCSDK'
   #s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/libCCCSDK' }
   
-  s.source_files        = 'include/*.h'
+  s.source_files        = 'include/CCCSDK/*.h'
   s.ios.vendored_library = 'libCCCSDK.a'
 end
