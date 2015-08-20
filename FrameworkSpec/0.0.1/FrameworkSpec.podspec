@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/Prashant034/prashant.git", :tag => "0.0.1" }
   s.source_files  = 'include/*.h'
-  s.library = 'CCCSDK' 
+  s.library = 'libCCCSDK' 
   s.source_files = '*.h' 
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/FrameworkSpec"' } 
 end
