@@ -26,9 +26,9 @@ Pod::Spec.new do |s|
   #s.source_files        = '/*.h'
   #s.ios.vendored_library = 'libCCCSDK.a'
   
-  s.source_files  = "include/*.h"
-  s.public_header_files = "include/*.h"
-  s.preserve_paths = "libCCCSDK.a"
-  s.ios.vendored_library = "libCCCSDK.a"
+  s.source_files  = 'include/*.h'
+  s.public_header_files = 'include/*.h'
+  s.preserve_paths = 'libCCCSDK.a'
+  s.ios.vendored_library = 'libCCCSDK.a'
 
 end
