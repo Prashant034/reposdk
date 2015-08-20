@@ -11,8 +11,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Prashant034/prashant.git", :tag => "0.0.1" }
-  s.source_files  = 'include/CCCSDK/*.h'
-  s.library = 'libCCCSDK.a' 
-  s.source_files = '*.h' 
+  #s.source_files  = 'include/CCCSDK/*.h'
+  #s.library = 'libCCCSDK.a' 
+  #s.source_files = '*.h' 
+  s.vendored_libraries: "prashant/*.a"
   s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/FrameworkSpec"' } 
 end
