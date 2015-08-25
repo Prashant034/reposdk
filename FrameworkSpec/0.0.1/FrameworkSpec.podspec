@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Prashant034/prashant.git", :tag => "0.0.2" }
-  s.source_files  = 'include/CCCSDK/*.h'
+  s.source_files  = '*.h'
   #s.library = 'libCCCSDK.a' 
   #s.source_files = '*.h' 
   #s.vendored_libraries = 'libCCCSDK.a'
